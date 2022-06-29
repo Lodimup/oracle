@@ -11,5 +11,9 @@ async def root():
     db_price = rdb.json().get('price:agg', Path.root_path())
     rdb.close()
     del db_price['ts']
-
-    return {"prices": db_price}
+    
+    dct_resp = {}
+    for k, v in db_price.items():
+        dct_resp[k] = str(v)
+    
+    return {"prices": dct_resp}
