@@ -12,4 +12,4 @@ async def root():
     rdb.close()
     del db_price['ts']
 
-    return {"price": db_price}
+    return {"prices": db_price}
