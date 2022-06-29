@@ -10,6 +10,8 @@ redis = "*"
 pycoingecko = "*"
 fastapi = {extras = ["all"], version = "*"}
 uvicorn = {extras = ["standard"], version = "*"}
+python-binance = "*"
+pandas = "*"
 
 [dev-packages]
 
