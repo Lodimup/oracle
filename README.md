@@ -59,12 +59,12 @@ docker compose up --build --force-recreate
 ```
 Use env manager of your choice
 ```
+pip install pipenv
 pipenv install
 ```
 Start fetcher
 ```
 pipenv run python fetcher.py
-
 ```
 Start apiserver
 ```
