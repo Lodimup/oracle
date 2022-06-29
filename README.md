@@ -1,6 +1,10 @@
 # oracle
 API which periodically fetches price data from Coingeckco, and Binance, then conditionally stores in Redis.  
 
+The program is separated into two services:  
+fetcher.py for fetching and storing data
+server.py for serving API /latest
+
 # Objectives
 - [x] fetch binance price
 - [x] fetch coingeco price
@@ -21,6 +25,7 @@ load_dotenv()
 ... = os.getenv('...')
 ```
 but opted out for the sake of simplicity in testing.
+Sane options can be configured in fetcher.py constants.  
 
 # Rationale
 ## Separating server.py, fetcher.py
