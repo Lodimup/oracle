@@ -26,7 +26,13 @@ load_dotenv()
 ```
 but opted out for the sake of simplicity in testing.
 Sane options can be configured in fetcher.py constants.  
-
+Function pattern:
+```
+def func():
+  guard
+  body
+  default
+```
 # Rationale
 ## Separating server.py, fetcher.py
 Simply micro-service pattern. Each service should only do one thing.
